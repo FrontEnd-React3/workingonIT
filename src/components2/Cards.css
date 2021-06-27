@@ -1,0 +1,43 @@
+.cards {
+  background: lime;
+  height: 70vh;
+}
+
+h1 {
+  text-align: center;
+}
+
+.cards__container {
+  /* display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; */
+  max-width: 1120px;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  background: gold;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 20px 20px;
+}
+@media screen and (max-width: 900px) {
+  .cards__container {
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    background: red;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cards__container {
+    grid-template: repeat(1, 1fr) / repeat(1, 1fr);    background: orange;
+
+  }
+}
+
+.cards__item {
+  /* min-width: 32%;   */
+  border-radius: 5px;
+
+  height: auto;
+  background: white !important;
+  border: black 1px solid;
+}
